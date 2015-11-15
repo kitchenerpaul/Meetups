@@ -168,8 +168,15 @@
                             <constraint firstItem="jBn-r2-iir" firstAttribute="top" secondItem="jUy-xL-wTT" secondAttribute="bottom" constant="22" id="vk4-j6-YVX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5Hc-mv-6rJ"/>
+                    <navigationItem key="navigationItem" id="5Hc-mv-6rJ">
+                        <barButtonItem key="rightBarButtonItem" title="Comments" id="WPR-IN-xfm">
+                            <connections>
+                                <segue destination="JYW-k8-UCO" kind="show" id="SUt-uL-qlM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="commentsBarButton" destination="WPR-IN-xfm" id="vV4-sg-l29"/>
                         <outlet property="eventTextView" destination="kJ6-wK-e1R" id="ida-aE-zyf"/>
                         <outlet property="eventTitleLabel" destination="jBn-r2-iir" id="eiw-mk-d2d"/>
                         <outlet property="hostingGroupLabel" destination="Ya4-R0-AYp" id="oTP-h8-FqO"/>
@@ -179,6 +186,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ot9-bp-k1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1987" y="386"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="JOY-Mb-Lfn">
+            <objects>
+                <tableViewController id="JYW-k8-UCO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ry9-0N-bHx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" id="8Vi-KB-zWL">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Vi-KB-zWL" id="bAi-Zj-GQo">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JYW-k8-UCO" id="WGo-bf-ZlV"/>
+                            <outlet property="delegate" destination="JYW-k8-UCO" id="mQW-Se-srK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSZ-3u-WSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668" y="386"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="QtC-el-YKh">

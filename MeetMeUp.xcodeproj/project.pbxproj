@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170D9D2D1BF905F800F0F1F3 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = 170D9D2C1BF905F800F0F1F3 /* Member.m */; };
+		170D9D301BF916F600F0F1F3 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 170D9D2F1BF916F600F0F1F3 /* Comment.m */; };
 		176277A41BCC3E6D00747057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 176277A31BCC3E6D00747057 /* main.m */; };
 		176277A71BCC3E6D00747057 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 176277A61BCC3E6D00747057 /* AppDelegate.m */; };
 		176277AA1BCC3E6D00747057 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176277A91BCC3E6D00747057 /* ViewController.m */; };
 		176277AD1BCC3E6D00747057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176277AB1BCC3E6D00747057 /* Main.storyboard */; };
 		176277AF1BCC3E6D00747057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176277AE1BCC3E6D00747057 /* Assets.xcassets */; };
 		176277B21BCC3E6D00747057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176277B01BCC3E6D00747057 /* LaunchScreen.storyboard */; };
-		176277BB1BCC606600747057 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176277BA1BCC606600747057 /* EventViewController.m */; settings = {ASSET_TAGS = (); }; };
-		176277BE1BCC664A00747057 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176277BD1BCC664A00747057 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		176277BB1BCC606600747057 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176277BA1BCC606600747057 /* EventViewController.m */; };
+		176277BE1BCC664A00747057 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176277BD1BCC664A00747057 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170D9D2B1BF905F800F0F1F3 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		170D9D2C1BF905F800F0F1F3 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		170D9D2E1BF916F600F0F1F3 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		170D9D2F1BF916F600F0F1F3 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		1762779F1BCC3E6D00747057 /* MeetMeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetMeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176277A31BCC3E6D00747057 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		176277A51BCC3E6D00747057 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170D9D2A1BF900D300F0F1F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				170D9D2B1BF905F800F0F1F3 /* Member.h */,
+				170D9D2C1BF905F800F0F1F3 /* Member.m */,
+				170D9D2E1BF916F600F0F1F3 /* Comment.h */,
+				170D9D2F1BF916F600F0F1F3 /* Comment.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		176277961BCC3E6D00747057 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +88,7 @@
 				176277BA1BCC606600747057 /* EventViewController.m */,
 				176277BC1BCC664A00747057 /* WebViewController.h */,
 				176277BD1BCC664A00747057 /* WebViewController.m */,
+				170D9D2A1BF900D300F0F1F3 /* Models */,
 				176277A21BCC3E6D00747057 /* Supporting Files */,
 			);
 			path = MeetMeUp;
@@ -160,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170D9D301BF916F600F0F1F3 /* Comment.m in Sources */,
 				176277AA1BCC3E6D00747057 /* ViewController.m in Sources */,
+				170D9D2D1BF905F800F0F1F3 /* Member.m in Sources */,
 				176277BE1BCC664A00747057 /* WebViewController.m in Sources */,
 				176277BB1BCC606600747057 /* EventViewController.m in Sources */,
 				176277A71BCC3E6D00747057 /* AppDelegate.m in Sources */,
@@ -311,6 +331,7 @@
 				176277B81BCC3E6D00747057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

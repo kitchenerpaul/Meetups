@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *hostingGroupLabel;
 
 @property (weak, nonatomic) IBOutlet UITextView *eventTextView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *commentsBarButton;
 
 @end
 
@@ -23,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.commentsBarButton.enabled = NO;
 
     self.hostingGroupLabel.text = [NSString stringWithFormat:@"Hosted by: %@",[[self.eventDictionary objectForKey:@"venue"] objectForKey:@"name"]];
     self.eventTitleLabel.text = [self.eventDictionary objectForKey:@"name"];
